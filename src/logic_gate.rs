@@ -21,7 +21,7 @@ impl Gate for OrGate {
 pub struct NotGate;
 
 impl NotGate {
-    fn evaluate(a: bool) -> bool {
+    pub fn evaluate(a: bool) -> bool {
         !a
     }
 }
