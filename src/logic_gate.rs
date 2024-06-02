@@ -1,8 +1,8 @@
-trait Gate {
+pub trait Gate {
     fn evaluate(a: bool, b: bool) -> bool;
 }
 
-struct AndGate;
+pub struct AndGate;
 
 impl Gate for AndGate {
     fn evaluate(a: bool, b: bool) -> bool {
@@ -10,7 +10,7 @@ impl Gate for AndGate {
     }
 }
 
-struct OrGate;
+pub struct OrGate;
 
 impl Gate for OrGate {
     fn evaluate(a: bool, b: bool) -> bool {
@@ -18,7 +18,7 @@ impl Gate for OrGate {
     }
 }
 
-struct NotGate;
+pub struct NotGate;
 
 impl NotGate {
     fn evaluate(a: bool) -> bool {
@@ -26,7 +26,7 @@ impl NotGate {
     }
 }
 
-struct NandGate;
+pub struct NandGate;
 
 impl Gate for NandGate {
     fn evaluate(a: bool, b: bool) -> bool {
@@ -34,7 +34,7 @@ impl Gate for NandGate {
     }
 }
 
-struct NorGate;
+pub struct NorGate;
 
 impl Gate for NorGate {
     fn evaluate(a: bool, b: bool) -> bool {
@@ -42,7 +42,7 @@ impl Gate for NorGate {
     }
 }
 
-struct XorGate;
+pub struct XorGate;
 
 impl Gate for XorGate {
     fn evaluate(a: bool, b: bool) -> bool {
@@ -50,7 +50,7 @@ impl Gate for XorGate {
     }
 }
 
-struct XnorGate;
+pub struct XnorGate;
 
 impl Gate for XnorGate {
     fn evaluate(a: bool, b: bool) -> bool {
